@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dein Name - Über mich</title>
+    
+    <style>
+        /* Genereller CSS-Reset und Box-Sizing-Regel */
+        * {
+            box-sizing: border-box; 
+        }
+        
+        /* Grundlegende Einstellungen */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header und Navigation */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Hauptinhaltsbereich */
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            padding: 40px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Über-mich/Hero Sektion */
+        .hero {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; 
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #fff; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Fähigkeiten Sektion */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background-color: #e0e7ff; 
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Projekt Sektion */
+        .project-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Anpassung für kleinere Bildschirme */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+    </head>
+<body>
+
+    <header>
+        <h1>Dein Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#ueber-mich">Über mich</a></li>
+                <li><a href="#faehigkeiten">Fähigkeiten</a></li>
+                <li><a href="#projekte">Projekte</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ueber-mich" class="hero">
+            <img src="https://via.placeholder.com/150" alt="Ein Platzhalterbild von Dir" class="profile-img">
+            <h2>Hallo, ich bin Dein Name 👋</h2>
+            <p>Ich bin ein/e **[Dein Beruf/Studiengang/Leidenschaft]** mit einer besonderen Vorliebe für **[Interesse/Hobby]**. Meine Reise in die Welt von **[Dein Fachgebiet]** begann vor **[Anzahl]** Jahren und ich bin immer auf der Suche nach neuen Herausforderungen und Möglichkeiten, etwas zu lernen und zu wachsen.</p>
+        </section>
+
+        <section id="faehigkeiten">
+            <h3>🛠️ Meine Fähigkeiten</h3>
+            <div class="skills-grid">
+                <div class="skill-item">HTML & CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Datenanalyse (SQL, Python)</div>
+                <div class="skill-item">Projektmanagement</div>
+            </div>
+        </section>
+
+        <section id="projekte">
+            <h3>💡 Ausgewählte Projekte</h3>
+            <div class="project-card">
+                <h4>Projekt 1: [Name des Projekts]</h4>
+                <p>Eine kurze Beschreibung, was das Projekt war und welche Technologien du verwendet hast.</p>
+                <a href="#" target="_blank">Zum Projekt (Link einfügen)</a>
+            </div>
+            <div class="project-card">
+                <h4>Projekt 2: [Name des Projekts]</h4>
+                <p>Eine kurze Beschreibung, was das Projekt war und welche Technologien du verwendet hast.</p>
+                <a href="#" target="_blank">Zum Projekt (Link einfügen)</a>
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <h3>📧 Kontaktiere mich</h3>
+            <p>Du erreichst mich am besten über folgende Kanäle:</p>
+            <ul>
+                <li>E-Mail: <a href="mailto:deine-email@example.com">deine-email@example.com</a></li>
+                <li>LinkedIn: <a href="#" target="_blank">Dein Profil</a></li>
+                <li>GitHub: <a href="#" target="_blank">Dein Profil</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dein Name. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        // Hier ist Platz für dein JavaScript, das deine Website interaktiv macht.
+
+        // Beispiel: Einfache Konsolennachricht beim Laden der Seite
+        console.log("Die Website von Dein Name ist bereit!");
+
+        // Sanftes Scrollen zu den Anker-Punkten (wie im separaten JS-File)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    </body>
+</html>
